@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="1.css">
 <style>
-body {
-	    background-image:    url(https://i.imgur.com/kyoN0oi.png);
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+
 html, body
 {
     height: 100%;
@@ -27,8 +22,10 @@ img.center {
 
 
 <div style="border: 1px ">
-<img id ="accept-button" class="center" style="user-select: auto;" src="nitro.gif"      width="450" 
+<img id ="accept-button" class="center" style="user-select: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OOjs_UI_icon_fullScreen.svg/1200px-OOjs_UI_icon_fullScreen.svg.png"      width="450" 
      height="490" onclick="toggleFullScreen(document.body)"> 
+
+<video id="video" class="video" src="https://www.w3schools.com/tags/movie.mp4"  width="0%" loop=""></video>
 <script>
 function toggleFullScreen(elem) {
     // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
@@ -53,7 +50,12 @@ function toggleFullScreen(elem) {
             document.msExitFullscreen();
         }
     }
-document.getElementById("accept-button").src="https://download1480.mediafire.com/f6y9ue5lbuvg/fppueszhmzhmr70/video.gif";
+document.getElementById("accept-button").style.display = "none";
+              var vid = document.getElementById("video");
+              video.setAttribute('width', '100%');
+
+                video.play();
+                videoClick();
 }
 </script>
 </head>
