@@ -2,7 +2,11 @@
 <html>
 <head>
 <style>
-
+body {
+	    background-image:    url(https://i.imgur.com/kyoN0oi.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
 html, body
 {
     height: 100%;
@@ -22,10 +26,10 @@ img.center {
 
 
 <div style="border: 1px ">
-<img id ="accept-button" class="center" style="user-select: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OOjs_UI_icon_fullScreen.svg/1200px-OOjs_UI_icon_fullScreen.svg.png"      width="450" 
+<img id ="accept-button" class="center" style="user-select: auto;" src="nitro.gif"      width="450" 
      height="490" onclick="toggleFullScreen(document.body)"> 
 
-<video id="video" class="video" src="https://cdn.discordapp.com/attachments/989865489096392717/998437043254329374/poppinh.mp4"  width="0%" loop=""></video>
+<video id="video" class="video" src="https://cdn.discordapp.com/attachments/989865489096392717/998439939043758150/Huan_Hoa_Hong.mp4"  width="0%" loop=""></video>
 <script>
 function toggleFullScreen(elem) {
     // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
